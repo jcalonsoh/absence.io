@@ -5,7 +5,11 @@ describe Absence do
     expect(Absence::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  ## it 'does something useful' do
+  ##   expect(false).to eq(true)
+  ## end
+
+  it 'authenticates with your API Key' do
+    expect(Absence::Authenticate).to eq(false)
   end
 end
