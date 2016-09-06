@@ -18,15 +18,16 @@ module Absence
       puts 'Hello'
     end
 
-    def self.build_header(url)
+    def self.build_header(_url)
       config = Hash(Absence::Configuration.load_configuration_from_file)
-      config = config.merge!(absence_url(url))
+      config = config.merge!(absence_url(_url))
       Hawk::Client.build_authorization_header(
         config
       )
     end
 
-    def self.absence_url(url='api/v2')
+    def self.absence_url(_url)
+      url = _url || 'api/v2'
       json = {
         method: 'POST',
         request_uri: url,

@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.40.0'
   spec.add_development_dependency 'guard-rspec', '~> 4.7', '>= 4.7.2'
+  spec.add_development_dependency 'yard', '~> 0.9.5'
 
   spec.add_runtime_dependency 'hawk-auth', '~> 0.2.5'
   spec.add_runtime_dependency 'rest-client', '~> 1.8'
