@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'hawk-auth', '~> 0.2.5'
   spec.add_runtime_dependency 'rest-client', '~> 1.8'
   spec.add_runtime_dependency 'http', '~> 2.0', '>= 2.0.2'
+  spec.add_runtime_dependency 'json', '~> 2.0', '>= 2.0.2'
 end

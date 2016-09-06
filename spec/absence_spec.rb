@@ -1,15 +1,21 @@
 require 'spec_helper'
 
 describe Absence do
-  it 'has a version number' do
-    expect(Absence::VERSION).not_to be nil
+  context 'Basics Methods' do
+    it 'Has a version number' do
+      expect(Absence::VERSION).not_to be nil
+    end
+
+    it 'Has valid connection' do
+      expect(Absence::Authenticate.value).not_to be nil
+    end
   end
-
-  ## it 'does something useful' do
-  ##   expect(false).to eq(true)
-  ## end
-
-  it 'authenticates with your API Key' do
-    expect(Absence::Authenticate).to eq(false)
+  context 'Users' do
+    it 'Get List of Users' do
+      expect(Absence::Users.list_of_users).not_to be nil
+    end
+    it 'Print List of Users' do
+      expect(Absence::Users.list_of_users).not_to be nil
+    end
   end
 end

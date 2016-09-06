@@ -4,6 +4,7 @@
 
 require 'uri'
 require 'net/http'
+require 'json'
 require_relative '../../lib/absence/authentication'
 
 module Absence
@@ -23,8 +24,11 @@ module Absence
       request['content-type'] = 'application/json'
 
       response = http.request(request)
-      puts response.read_body
-      puts token
+      response.read_body
+    end
+
+    def self.print_list_of_users
+      puts JSON.pretty_generate(list_of_users.to_json)
     end
   end
 end

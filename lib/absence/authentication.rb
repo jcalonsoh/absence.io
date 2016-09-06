@@ -15,7 +15,7 @@ module Absence
     end
 
     def self.value
-      puts 'Hello'
+      build_header(absence_url('/'))
     end
 
     def self.build_header(_url)
