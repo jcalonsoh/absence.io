@@ -9,13 +9,13 @@ require_relative '../../lib/absence/authentication'
 require_relative '../absence/libs/absence_request'
 
 module Absence
-  class Users
-    def self.list_of_users
-      Absence::Requester.new('users').response.to_json
+  class Teams
+    def self.list_of_teams
+      Absence::Requester.new('teams').response.to_json
     end
 
-    def self.print_list_of_users
-      JSON.pretty_generate(list_of_users)
+    def self.print_list_of_teams
+      JSON.pretty_generate(list_of_teams)
     end
   end
 end

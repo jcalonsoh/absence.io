@@ -33,11 +33,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 To start working on it use
 
 irb 
-require "#{Dir.pwd}/lib/absence.rb"
-autoload :Absence, "#{Dir.pwd}/lib/absence.rb"
 
-Test the modules 
-Absence::Authenticate.build_header('/')
+require "#{Dir.pwd}/lib/absence.rb"
+
+autoload :Absence, "#{Dir.pwd}/lib/absence.rb"
 
 
 ## Contributing
