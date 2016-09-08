@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/jcalonsoh/absence.io.svg?branch=develop)](https://travis-ci.org/jcalonsoh/absence.io)
+[![Build Status](https://codecov.io/github/jcalonsoh/absence.io/coverage.svg?branch=develop)](https://codecov.io/gh/jcalonsoh/absence.io/branch/develop)
+
 # Absence
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/absence`. To experiment with that code, run `bin/console` for an interactive prompt.
