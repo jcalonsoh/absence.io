@@ -5,7 +5,7 @@
 require 'uri'
 require 'net/http'
 require 'json'
-require_relative '../../lib/absence/authentication'
+require_relative '../../lib/absence/libs/authentication'
 require_relative '../absence/libs/absence_request'
 
 module Absence

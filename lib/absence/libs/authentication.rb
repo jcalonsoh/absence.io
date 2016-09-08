@@ -4,7 +4,7 @@
 
 require 'hawk'
 require 'json'
-require_relative '../../lib/absence/configuration'
+require_relative '../libs/configuration'
 
 module Absence
   class Authenticate
